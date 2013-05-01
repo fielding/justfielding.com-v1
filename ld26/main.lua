@@ -1,4 +1,4 @@
-Gamestate = require "hump.gamestate.lua"
+Gamestate = require "hump/gamestate.lua"
 
 -- debug flag
 debug = false
@@ -36,11 +36,11 @@ function love.load()
   require("src/states/play/lua")
 
     -- play substates
-  require("src/states/blockSelect")
-  require("src/states/blockJump")
+  require("src/states/blockSelect.lua")
+  require("src/states/blockJump.lua")
 
     -- create tile loader
-  loader = require "Advanced-Tiled-Loader/Loader"
+  loader = require "Advanced-Tiled-Loader/Loader.lua"
   -- set the path to the Tiled map files
   loader.path = "assets/map/"
 
