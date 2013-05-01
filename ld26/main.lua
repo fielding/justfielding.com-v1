@@ -28,7 +28,7 @@ function love.load()
   soundOff = love.graphics.newImage("assets/img/soundOff.png")
 
   -- menu/function states
-  require("src/states/intro")
+  require("src/states/intro.lua")
   require("src/states/about")
   require("src/states/paused")
   require("src/states/menu")
