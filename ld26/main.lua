@@ -33,7 +33,7 @@ function love.load()
   require("src/states/paused.lua")
   require("src/states/menu.lua")
   require("src/states/gameover.lua")
-  require("src/states/play/lua")
+  require("src/states/play.lua")
 
     -- play substates
   require("src/states/blockSelect.lua")
