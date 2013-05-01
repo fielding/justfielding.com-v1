@@ -24,11 +24,13 @@ function love.load()
   end
 
   -- images used in multiple states
+  logo = love.graphics.newImage("assets/img/logo.png")
   restartButton = love.graphics.newImage("assets/img/restart.png")
   exitButton = love.graphics.newImage("assets/img/exit.png")
   nextButton = love.graphics.newImage("assets/img/next.png")
   soundOn = love.graphics.newImage("assets/img/soundOn.png")
   soundOff = love.graphics.newImage("assets/img/soundOff.png")
+
 
   -- menu/function states
   require("src/states/intro.lua")

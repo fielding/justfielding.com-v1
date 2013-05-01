@@ -4,7 +4,6 @@ intro = {}
 intro.name = "intro"
 
 function intro:init()
-  logo = love.graphics.newImage("assets/img/logo.png")
 
   menuSelect = { position = 1, x = 509, y = 204 }
 
