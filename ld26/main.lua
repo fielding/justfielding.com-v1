@@ -9,16 +9,19 @@ function love.load()
   audioMuted = false
 
   -- setup fonts ( avoid having to load these on the fly, especiall in a draw/update call)
-  menuTitleFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 24)
-  pausedFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 24)
-  debugFont = love.graphics.newFont("assets/font/Comfortaa-Regular.ttf", 12)
-  introFont = love.graphics.newFont("assets/font/Comfortaa-Regular.ttf", 24)
-  aboutHeaderFont = love.graphics.newFont("assets/font/Comfortaa-Regular.ttf", 30)
-  aboutSubtextFont = love.graphics.newFont("assets/font/Comfortaa-Light.ttf", 12)
-  aboutFont = love.graphics.newFont("assets/font/Comfortaa-Regular.ttf", 14)
-  webdingsFont = love.graphics.newFont("assets/font/webdings.ttf", 36)
-  quoteFont = love.graphics.newFont("assets/font/Comfortaa-Light.ttf", 12)
-  quoteAuthorFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 11)
+  
+  if not love.web then
+    menuTitleFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 24)
+    pausedFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 24)
+    debugFont = love.graphics.newFont("assets/font/Comfortaa-Regular.ttf", 12)
+    introFont = love.graphics.newFont("assets/font/Comfortaa-Regular.ttf", 24)
+    aboutHeaderFont = love.graphics.newFont("assets/font/Comfortaa-Regular.ttf", 30)
+    aboutSubtextFont = love.graphics.newFont("assets/font/Comfortaa-Light.ttf", 12)
+    aboutFont = love.graphics.newFont("assets/font/Comfortaa-Regular.ttf", 14)
+    webdingsFont = love.graphics.newFont("assets/font/webdings.ttf", 36)
+    quoteFont = love.graphics.newFont("assets/font/Comfortaa-Light.ttf", 12)
+    quoteAuthorFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 11)
+  end
 
   -- images used in multiple states
   restartButton = love.graphics.newImage("assets/img/restart.png")
