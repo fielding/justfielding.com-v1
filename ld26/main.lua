@@ -29,11 +29,11 @@ function love.load()
 
   -- menu/function states
   require("src/states/intro.lua")
-  require("src/states/about")
-  require("src/states/paused")
-  require("src/states/menu")
-  require("src/states/gameover")
-  require("src/states/play")
+  require("src/states/about.lua")
+  require("src/states/paused.lua")
+  require("src/states/menu.lua")
+  require("src/states/gameover.lua")
+  require("src/states/play/lua")
 
     -- play substates
   require("src/states/blockSelect")
