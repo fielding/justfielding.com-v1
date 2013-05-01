@@ -10,6 +10,7 @@ function love.load()
 
   -- setup fonts ( avoid having to load these on the fly, especiall in a draw/update call)
   
+  --[[
   if not love.web then
     menuTitleFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 24)
     pausedFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 24)
@@ -22,6 +23,7 @@ function love.load()
     quoteFont = love.graphics.newFont("assets/font/Comfortaa-Light.ttf", 12)
     quoteAuthorFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 11)
   end
+  ]]
 
   -- images used in multiple states
   logo = love.graphics.newImage("assets/img/logo.png")
@@ -55,6 +57,7 @@ function love.load()
 
   -- get info about available tileset
 
+  --[[
   tiles = {}
 
   for id, tile in pairs(map.tiles) do
@@ -62,6 +65,7 @@ function love.load()
       tiles[tile.properties.color] = tile
     end
   end
+  ]]
   
   -- setup the player
   player = { posX = 0, posY = 0, curOriginalColor = "purple" }
