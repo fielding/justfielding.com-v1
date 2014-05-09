@@ -8,18 +8,50 @@ Element Selectors
 ----------------------*/
 
 html {
-
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 header[role="banner"] {
-    background-color: #222222;
-    height: 17.5em;
+    background-color: #2F3437;
+    height: 10em;
+    border-bottom-color: #1D2223;
+    border-bottom-style: solid;
+    display: block;
 }
 
 header[role="banner"] object {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: auto;
 }
+
+#about {
+    background-color: #FFF;
+    height: 10em;
+}
+
+#whatido {
+    background-color: #9477C9;
+    height: 10em;
+}
+
+#pastwork {
+    background-color: #FFF;
+    height: 10em;
+}
+
+
+footer[role="contentinfo"] {
+    background-color: #EDEEF0;
+    height: 10em;
+    border-top-color: #DEE4E8;
+    border-top-style: solid;
+}
+
+
+
 
 /*----------------------
 jflogo.svg
@@ -37,15 +69,49 @@ Media Queries
 
 @media screen and (min-width: 28.75em){
 
-    header[role="banner"]{
-        height: 27.5em;
+    header[role="banner"] {
+        height: 20em;
     }
+
+    #about {
+        height: 20em;
+    }
+
+    #whatido {
+        height: 20em;
+    }
+
+    #pastwork {
+        height: 20em;
+    }
+
+    footer[role="contentinfo"] {
+        height: 20em;
+    }
+
+
 }
 
 @media screen and (min-width: 48.0em) {
 
     header[role="banner"]{
-        height: 37.5em;
+        height: 30em;
+    }
+
+    #about {
+        height: 30em;
+    }
+
+    #whatido {
+        height: 30em;
+    }
+
+    #pastwork {
+        height: 30em;
+    }
+
+    footer[role="contentinfo"] {
+        height: 20em;
     }
 
 }
