@@ -1,4 +1,4 @@
-Gamestate = require "hump/gamestate.lua"
+Gamestate = require "hump/gamestate"
 
 blockSelect = {}
 blockSelect.name = "blockSelect"

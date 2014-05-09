@@ -23,7 +23,7 @@
  </tileset>
  <layer name="board" width="10" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYCAeMJGgllj1TDjYlKhnJFE9tdTgUk+KGgAV7AAe
+   eJxjYCAeMJGgllj1TDjYlKjHpYZU9aSqwaWeFDUAFqgAHw==
   </data>
  </layer>
 </map>

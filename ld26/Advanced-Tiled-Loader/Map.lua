@@ -88,7 +88,7 @@ function Map:newTileLayer(position, ...)
     local layer = TileLayer:new(self, ...)
     local name = layer.name
     if self.layers[name] then 
-        error( string.format("Map:newTileLayer - A layer named \"%s\" already exists.", name) )
+         error( string.format("Map:newTileLayer - A layer named \"%s\" already exists.", name) )
     end
     self.layers[name] = layer
     table.insert(self.layerOrder, position or #self.layerOrder + 1, layer)
@@ -111,7 +111,7 @@ end
 ---------------------------------------------------------------------------------------------------
 -- Add a custom layer to the map. You can include a predefined layer table or one will be created.
 function Map:newCustomLayer(name, position, layer)
-    if self.layers[name] then 
+    if self.layers[name] then
         error( string.format("Map:newCustomLayer - The layer name \"%s\" already exists.", name) )
     end
     self.layers[name] = layer or {name=name}

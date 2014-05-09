@@ -1,0 +1,57 @@
+{ "height":10,
+ "layers":[
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0],
+         "height":10,
+         "name":"board",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":10,
+         "x":0,
+         "y":0
+        }],
+ "orientation":"isometric",
+ "properties":
+    {
+
+    },
+ "tileheight":32,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "image":"isocubetileset.png",
+         "imageheight":64,
+         "imagewidth":196,
+         "margin":0,
+         "name":"isocubes",
+         "properties":
+            {
+
+            },
+         "spacing":2,
+         "tileheight":64,
+         "tileproperties":
+            {
+             "0":
+                {
+                 "color":"white",
+                 "type":"cube"
+                },
+             "1":
+                {
+                 "color":"purple",
+                 "type":"cube"
+                },
+             "2":
+                {
+                 "color":"teal",
+                 "type":"cube"
+                }
+            },
+         "tilewidth":64
+        }],
+ "tilewidth":64,
+ "version":1,
+ "width":10
+}

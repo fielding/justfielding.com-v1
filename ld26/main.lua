@@ -1,7 +1,26 @@
-Gamestate = require "hump/gamestate.lua"
+-- create gamestate object
+Gamestate = require "hump/gamestate"
+
+-- create tile loader
+
+TILED_LOADER_PATH = 'Advanced-Tiled-Loader/'
+loader = require "Advanced-Tiled-Loader/Loader"
+
+-- menu/function states
+require("src/states/intro")
+require("src/states/paused")
+require("src/states/menu")
+require("src/states/gameover")
+require("src/states/play")
+require("src/states/about")
+
+-- play substates
+require("src/states/blockSelect")
+require("src/states/blockJump")
 
 -- debug flag
-debug = false
+debug = true
+debugDisplay = false
 
 function love.load()
   love.graphics.setBackgroundColor(32,32,32)
@@ -9,11 +28,9 @@ function love.load()
   audioMuted = false
 
   -- setup fonts ( avoid having to load these on the fly, especiall in a draw/update call)
-  
-  --[[
+  -- menuTitleFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 24)
+
   if not love.web then
-    menuTitleFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 24)
-    pausedFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 24)
     debugFont = love.graphics.newFont("assets/font/Comfortaa-Regular.ttf", 12)
     introFont = love.graphics.newFont("assets/font/Comfortaa-Regular.ttf", 24)
     aboutHeaderFont = love.graphics.newFont("assets/font/Comfortaa-Regular.ttf", 30)
@@ -23,7 +40,6 @@ function love.load()
     quoteFont = love.graphics.newFont("assets/font/Comfortaa-Light.ttf", 12)
     quoteAuthorFont = love.graphics.newFont("assets/font/Comfortaa-Bold.ttf", 11)
   end
-  ]]
 
   -- images used in multiple states
   logo = love.graphics.newImage("assets/img/logo.png")
@@ -33,39 +49,27 @@ function love.load()
   soundOn = love.graphics.newImage("assets/img/soundOn.png")
   soundOff = love.graphics.newImage("assets/img/soundOff.png")
 
-
-  -- menu/function states
-  require("src/states/intro.lua")
-  require("src/states/about.lua")
-  require("src/states/paused.lua")
-  require("src/states/menu.lua")
-  require("src/states/gameover.lua")
-  require("src/states/play.lua")
-
-    -- play substates
-  require("src/states/blockSelect.lua")
-  require("src/states/blockJump.lua")
-
-    -- create tile loader
-  loader = require "Advanced-Tiled-Loader/Loader.lua"
   -- set the path to the Tiled map files
-  loader.path = "assets/map/"
+  -- loader.path = "assets/map/"
 
   -- load the current map
-  map = loader.load("board.tmx")
-  layer = map("board")
+  -- map = loader.load("board.tmx")
+
+  
+  map = require("assets/map/board")
+
+
+  layer = map.tilelayers["board"]
 
   -- get info about available tileset
 
-  --[[
   tiles = {}
 
-  for id, tile in pairs(map.tiles) do
+  for id, tile in pairs(map.tilesets) do
     if tile.properties.color then
       tiles[tile.properties.color] = tile
     end
   end
-  ]]
   
   -- setup the player
   player = { posX = 0, posY = 0, curOriginalColor = "purple" }
@@ -89,24 +93,24 @@ end
 function love.draw()
   --love.graphics.setColor(0, 0, 0, 255)
 
-  if debug == true then
+  if debugDisplay == true then
     debugOverlay()
   end
 end
 
 function reset()
 
--- reload the map
-map = loader.load("board.tmx")
-layer = map("board")
+  -- reload the map
+  map = loader.load("board.tmx")
+  layer = map("board")
 
--- reset the player position/info
-player.posX = 0
-player.posY = 0
-player.curOriginalColor = "purple"
+  -- reset the player position/info
+  player.posX = 0
+  player.posY = 0
+  player.curOriginalColor = "purple"
 
--- spawn new player
-spawnPlayer()
+  -- spawn new player
+  spawnPlayer()
 
 end
 
@@ -178,30 +182,27 @@ function love.keypressed(k)
   end
   ]]
 
-  -- random key used for varius debugging
-  --[[
-  if k == "`" then
-    if debug == false then
-      debug = true
-    else
-      debug = false
+  if debug == true then
+    if k == "`" then
+      if debugDisplay == false then
+        debugDisplay = true
+      else
+        debugDisplay = false
+      end
+    end
+    
+    if k == "g" then
+      Gamestate.switch(gameover, Gamestate.getCurrent())
+    end
+
+    if k == "l" then
+      if curLevel < 4 then
+        curLevel = curLevel + 1
+        completedLevels[curLevel] = true
+      end
     end
   end
-  ]]
 
-  --[[
-  if k == "g" then
-    Gamestate.switch(gameover, Gamestate.getCurrent())
-  end
-
-  if k == "l" then
-    if curLevel < 4 then
-      curLevel = curLevel + 1
-      completedLevels[curLevel] = true
-    end
-  end
-  ]]
-  
 end
 
 -- skeleton in case I need later
@@ -370,9 +371,6 @@ function drawPlaystateExtras()
       love.graphics.rectangle("fill", 601, 41, 16, 16)
     end
   end
-
-  
-
 
   -- reset level button
   if love.mouse.getX() > 587 and love.mouse.getX() < 610 and love.mouse.getY() > 76 and love.mouse.getY() < 102 then
