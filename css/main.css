@@ -12,6 +12,10 @@ html {
     line-height: 1.4;
 }
 
+a {
+    display: inline-block;
+}
+
 header[role="banner"] {
     background-color: #2F3437;
     height: 10em;
@@ -58,6 +62,7 @@ header[role="banner"]:before {
 
 #github, #twitter, #mail {
     margin: 0 auto;
+    pointer-events: none;
 }
 
 #about {
