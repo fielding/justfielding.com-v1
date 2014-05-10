@@ -15,7 +15,7 @@ html {
 header[role="banner"] {
     background-color: #2F3437;
     height: 10em;
-    border-bottom: 2px solid #1D2223;
+    border-bottom: 3px solid #1D2223;
     position: relative;
 }
 
@@ -40,8 +40,8 @@ header[role="banner"]:after {
 header[role="banner"]:before {
 	border-color: rgba(29, 34, 35, 0);
 	border-top-color: #1D2223;
-	border-width: 33px;
-	margin-left: -33px;
+	border-width: 34px;
+	margin-left: -34px;
 }
 
 
