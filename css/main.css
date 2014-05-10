@@ -29,6 +29,7 @@ header[role="banner"]:after, header[role="banner"]:before {
 	width: 0;
 	position: absolute;
 	pointer-events: none;
+
 }
 
 header[role="banner"]:after {
