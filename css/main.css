@@ -22,11 +22,16 @@ header[role="banner"] {
 #jflogo {
     display: block;
     height: 80%;
-    margin: auto;
+    margin: 0 auto;
     width: 80%;
 }
 
 #header-socialicons {
+    text-align: center;
+}
+
+#github, #twitter, #mail {
+    margin: 0 auto;
 }
 
 #about {
