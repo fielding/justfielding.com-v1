@@ -4,7 +4,7 @@ justfielding.com style sheet
 
 
 /* ---------------------
-Element Selectors
+Element Selectors (ordered as they appear on the page)
 ----------------------*/
 
 html {
@@ -17,14 +17,16 @@ header[role="banner"] {
     height: 10em;
     border-bottom-color: #1D2223;
     border-bottom-style: solid;
-    display: block;
 }
 
-header[role="banner"] object {
-    width: 80%;
-    height: 80%;
+#jflogo {
     display: block;
+    height: 80%;
     margin: auto;
+    width: 80%;
+}
+
+#header-socialicons {
 }
 
 #about {
@@ -50,15 +52,26 @@ footer[role="contentinfo"] {
     border-top-style: solid;
 }
 
-
-
-
 /*----------------------
-jflogo.svg
+SVG adjustments (still unclear of where I want to put these)
 -----------------------*/
 
 .text-just {
     fill: #FFFFFF;
+}
+
+/*----------------------
+Helper classes (hack the planet)
+-----------------------*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
 }
 
 
@@ -115,3 +128,6 @@ Media Queries
     }
 
 }
+
+
+
