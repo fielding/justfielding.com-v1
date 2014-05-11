@@ -28,10 +28,6 @@ html {
     font-family: $font-sans;
 }
 
-a {
-    display: inline-block;
-}
-
 header[role="banner"] {
     background-color: $color-darkgray;
     height: 30em;
@@ -89,19 +85,40 @@ header[role="banner"]:before {
     
     @include responsive(medium-screens) {
         padding-top: 2em;
+        height: 75%;
+        width: 75%;
     }
     
     @include responsive(small-screens) {
         padding-top: 1em;
+        height: 70%;
+        width: 70%;
     }
 }
 
 #github, #twitter, #mail {
-    height: 12.5%;
+    height: 100%;
     width: auto;
     margin: auto;
     pointer-events: none;
 }
+
+.socialicons {
+    display: inline-block;
+    height: 12.5%;
+    width: auto;
+    
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+    }
+    
+    @include responsive(small-screens) {
+        height: 15%;
+    }
+}
+
 
 #about {
     background-color: $color-white;

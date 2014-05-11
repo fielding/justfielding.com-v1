@@ -1,36 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/css" href="../stylesheets/main.css"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
-	 id="svg2401" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" sodipodi:version="0.32" inkscape:export-filename="/home/fielding/jfv1.2web.png" inkscape:output_extension="org.inkscape.output.svg.inkscape" inkscape:export-xdpi="90" sodipodi:docname="jfv1.2.svg" inkscape:export-ydpi="90" inkscape:version="0.46"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="401.177px"
-	 height="182.834px" viewBox="140.785 97.427 401.177 182.834" enable-background="new 140.785 97.427 401.177 182.834"
-	 xml:space="preserve" preserveAspectRatio="xMidYMid meet">
-<g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer">
-	
-		<linearGradient id="path2425_1_" gradientUnits="userSpaceOnUse" x1="-413.2144" y1="1820.6621" x2="290.8675" y2="1820.6621" gradientTransform="matrix(0.465 0 0 -0.4039 358.6772 911.6904)">
-		<stop  offset="0" style="stop-color:#8668BB"/>
-		<stop  offset="0.25" style="stop-color:#7A5FA9"/>
-		<stop  offset="0.5" style="stop-color:#8063B0"/>
-		<stop  offset="1" style="stop-color:#2B223A"/>
-	</linearGradient>
-	<path id="path2425" fill="url(#path2425_1_)" stroke="#FFFFFF" stroke-width="4.3011" d="M270.205,148.063
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/css" href="../stylesheets/main.css" ?>
+    <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" id="svg2401" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" sodipodi:version="0.32" inkscape:export-filename="/home/fielding/jfv1.2web.png" inkscape:output_extension="org.inkscape.output.svg.inkscape" inkscape:export-xdpi="90" sodipodi:docname="jfv1.2.svg" inkscape:export-ydpi="90" inkscape:version="0.46" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="401.177px" height="182.834px" viewBox="140.785 97.427 401.177 182.834" enable-background="new 140.785 97.427 401.177 182.834" xml:space="preserve" preserveAspectRatio="xMidYMid meet">
+        <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer">
+
+            <linearGradient id="path2425_1_" gradientUnits="userSpaceOnUse" x1="-413.2144" y1="1820.6621" x2="290.8675" y2="1820.6621" gradientTransform="matrix(0.465 0 0 -0.4039 358.6772 911.6904)">
+                <stop offset="0" style="stop-color:#8668BB" />
+                <stop offset="0.25" style="stop-color:#7A5FA9" />
+                <stop offset="0.5" style="stop-color:#8063B0" />
+                <stop offset="1" style="stop-color:#2B223A" />
+            </linearGradient>
+            <path id="path2425" fill="url(#path2425_1_)" stroke="#FFFFFF" stroke-width="4.3011" d="M270.205,148.063
 		c43.632,10.639,90.245,11.938,134.78,4.979c32.729-5.53,68.031-18.1,84.152-45.197c2.854-5.254,6.127-14.255,3.991-2.497
 		c-4.852,27.138-12.651,55.597-33.577,76.999c-10.42,11.345-27.58,14.052-43.357,12.848c-55.516,0.827-111.754-2.552-166.565,6.893
 		c-29.786,5.127-59.726,17.963-75.481,41.483c-2.817,3.297-11.731,15.614-3.055,5.738c29.273-32.294,56.574-66.158,89.471-95.808
-		C263.449,151.491,266.233,148.258,270.205,148.063z"/>
-	
-		<linearGradient id="path3199_1_" gradientUnits="userSpaceOnUse" x1="-358.666" y1="1909.041" x2="113.9843" y2="1909.041" gradientTransform="matrix(0.534 0 0 -0.3713 373.8824 897.1857)">
-		<stop  offset="0" style="stop-color:#333333"/>
-		<stop  offset="0.5" style="stop-color:#C9C9C9"/>
-		<stop  offset="1" style="stop-color:#FFFFFF"/>
-	</linearGradient>
-	
-		<path id="path3199" sodipodi:nodetypes="cssss" inkscape:transform-center-x="45.933554" fill="url(#path3199_1_)" stroke="#FFFFFF" stroke-width="4.3011" d="
+		C263.449,151.491,266.233,148.258,270.205,148.063z" />
+
+            <linearGradient id="path3199_1_" gradientUnits="userSpaceOnUse" x1="-358.666" y1="1909.041" x2="113.9843" y2="1909.041" gradientTransform="matrix(0.534 0 0 -0.3713 373.8824 897.1857)">
+                <stop offset="0" style="stop-color:#333333" />
+                <stop offset="0.5" style="stop-color:#C9C9C9" />
+                <stop offset="1" style="stop-color:#FFFFFF" />
+            </linearGradient>
+
+            <path id="path3199" sodipodi:nodetypes="cssss" inkscape:transform-center-x="45.933554" fill="url(#path3199_1_)" stroke="#FFFFFF" stroke-width="4.3011" d="
 		M262.11,171.019c45.759,9.816,152.33,11.092,172.093-30.373c1.847-3.873-7.248,59.029-49.17,59.393
-		c-89.282,0.773-163.762-4.364-194.626,27.497C154.022,265.095,252.152,168.882,262.11,171.019z"/>
-	<text transform="matrix(1 0 0 1 146.1851 264.4219)" fill="#333333" font-family="'HelveticaNeueLTCom-LtEx'" font-size="72" class="text-just">just</text>
-	<text transform="matrix(1 0 0 1 270.167 264.4219)" fill="#9477C9" font-family="'HelveticaNeueLTCom-LtEx'" font-size="72">Fielding</text>
-</g>
-</svg>
+		c-89.282,0.773-163.762-4.364-194.626,27.497C154.022,265.095,252.152,168.882,262.11,171.019z" />
+            <text transform="matrix(1 0 0 1 146.1851 264.4219)" fill="#333333" font-family="'HelveticaNeueLTCom-LtEx'" font-size="72" class="text-just">just</text>
+            <text transform="matrix(1 0 0 1 270.167 264.4219)" fill="#9477C9" font-family="'HelveticaNeueLTCom-LtEx'" font-size="72">Fielding</text>
+        </g>
+    </svg>
