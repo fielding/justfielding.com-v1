@@ -18,9 +18,8 @@ $width-small: 40em;     // 640px
 $width-medium: 64em;    // 1024px
 $width-large: 90em;     // 1440px
 
-/* ---------------------
-Element Selectors (ordered as they appear on the page)
-----------------------*/
+// Element Selectors (ordered as they appear on the page)
+
 
 html {
     font-size: 1em;
@@ -124,6 +123,17 @@ header[role="banner"]:before {
     background-color: $color-white;
     height: 20em;
     text-align: center;
+    
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+        height: 16.6em;
+    }
+    
+    @include responsive(small-screens) {
+        height: 10em;
+    }
 }
 
 #about div {
@@ -141,22 +151,44 @@ header[role="banner"]:before {
     }
     
     @include responsive(medium-screens) {
-        font-size: 16pt
+        font-size: 16pt;
     }
     
     @include responsive(small-screens) {
-        font-size: 12pt;
+        font-size: 10pt;
     }
 }
 
 #whatido {
     background-color: $color-purple;
     height: 30em;
+    
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+        height: 25em;
+    }
+    
+    @include responsive(small-screens) {
+        height: 15em;
+    }
 }
 
 #pastwork {
     background-color: $color-white;
     height: 20em;
+    
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+        height: 16.6em;
+    }
+    
+    @include responsive(small-screens) {
+        height: 10em;
+    }
 }
 
 #letsworktogether {
@@ -167,6 +199,17 @@ header[role="banner"]:before {
     display: table;
     width: 100%;
     text-align: center;
+    
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+        height: 6.6em;
+    }
+    
+    @include responsive(small-screens) {
+        height: 4em;
+    }
 }
 
 #letsworktogether div {
@@ -178,6 +221,16 @@ header[role="banner"]:before {
     width: 66%;
     display: inline-block;
     color: $color-darkgray;
+    
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+    }
+    
+    @include responsive(small-screens) {
+        display: none;
+    }
 }
 
 #letsworktogether button {
@@ -190,61 +243,40 @@ header[role="banner"]:before {
     padding: 1em;
     @include rounded(.188em);
     
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+    }
+    
+    @include responsive(small-screens) {
+        font-size: 10pt;
+    }
+    
 }
 
 footer[role="contentinfo"] {
     background-color: $color-darkgray;
     height: 15em;
     border-top: .188em solid darken($color-darkgray, 7%);
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+        height: 12.5em;
+    }
+    
+    @include responsive(small-screens) {
+        height: 7.5em;
+    }
 }
 
-/*----------------------
-SVG adjustments (still unclear of where I want to put these)
------------------------*/
+
+// SVG adjustments (still unclear of where I want to put these)
 
 .text-just {
     fill: $color-white;
 }
-
-
-/*----------------------
-Helper classes (hack the planet)
------------------------*/
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-
-/*----------------------
-Media Queries
------------------------*/
-
-
-// Small screens
-@media only screen { } /* Define mobile styles */
-
-@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-
-// Medium screens
-@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
-
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
-// Large screens
-@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
-
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
-
-// XLarge screens
-@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
-
 
 
 
