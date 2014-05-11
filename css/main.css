@@ -12,15 +12,18 @@ html {
     line-height: 1.4;
 }
 
+/*
 a {
     display: inline-block;
 }
+*/
 
 header[role="banner"] {
     background-color: #2F3437;
-    height: 10em;
+    height: 30em;
     border-bottom: 3px solid #1D2223;
     position: relative;
+    text-align: center;
 }
 
 header[role="banner"]:after, header[role="banner"]:before {
@@ -32,7 +35,6 @@ header[role="banner"]:after, header[role="banner"]:before {
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-
 }
 
 header[role="banner"]:after {
@@ -50,35 +52,33 @@ header[role="banner"]:before {
 
 
 #jflogo {
-    padding-top: 1%;
     display: block;
-    margin: 0 auto;
-    height: 80%;
-    width: 80%;
-}
-
-#header-socialicons {
-    text-align: center;
+    margin: auto;
+    height: 60%;
+    width: 60%;
+    padding-top: 5%;
 }
 
 #github, #twitter, #mail {
-    margin: 0 auto;
+    height: 12.5%;
+    width: auto;
+    margin: auto;
     pointer-events: none;
 }
 
 #about {
     background-color: #FFF;
-    height: 10em;
+    height: 20em;
 }
 
 #whatido {
     background-color: #9477C9;
-    height: 10em;
+    height: 30em;
 }
 
 #pastwork {
     background-color: #FFF;
-    height: 10em;
+    height: 20em;
 }
 
 
@@ -117,6 +117,29 @@ Helper classes (hack the planet)
 Media Queries
 -----------------------*/
 
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+
+
+
+/*  OLD MEDIA QUERIES
 
 @media screen and (min-width: 28.75em){
 
@@ -164,8 +187,10 @@ Media Queries
     footer[role="contentinfo"] {
         height: 30em;
     }
-
 }
+
+
+*/
 
 
 
