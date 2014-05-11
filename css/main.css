@@ -10,6 +10,7 @@ Element Selectors (ordered as they appear on the page)
 html {
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -67,6 +68,19 @@ header[role="banner"]:before {
 #about {
     background-color: #FFF;
     height: 20em;
+    text-align: center;
+}
+
+#about div {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+#about p {
+    font-size: 20pt;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 #whatido {
@@ -79,11 +93,41 @@ header[role="banner"]:before {
     height: 20em;
 }
 
+#letsworktogether {
+    background-color: #F8F7F5;
+    height: 8em;
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+#letsworktogether div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#letsworktogether h3 {
+    width: 66%;
+    display: inline-block;
+    color: #2F3437;
+}
+
+#letsworktogether button {
+    background-color: #9477C9;
+    border-radius: .188em;
+    border: none;
+    color: #fff;
+    text-shadow: -.063em -.063em 0 rgba( 0, 0, 0, .5);
+    font-weight: 600;
+    letter-spacing: .063em;
+    padding: 1em;
+    
+}
 
 footer[role="contentinfo"] {
-    background-color: #EDEEF0;
-    height: 10em;
-    border-top-color: #DEE4E8;
+    background-color: #2F3437;
+    height: 15em;
+    border-top-color: #1D2223;
     border-top-style: solid;
 }
 
