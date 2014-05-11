@@ -1,0 +1,15 @@
+{
+    "path": {
+        "stylesheets/sass/main.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "output": "../main.css",
+                "includePaths": [],
+                "imagePath": null,
+                "sourceComments": "map",
+                "outputStyle": "compressed"
+            },
+            "brackets-git.gitPath": "git"
+        }
+    }
+}

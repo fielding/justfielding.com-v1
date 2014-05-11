@@ -1,0 +1,19 @@
+@mixin rounded($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// variables for width-small, width-medium, and width-large must be set somewhere (wherever variables are set)
+
+@mixin responsive($width) {
+    @if $width == wide-screens {
+        @media only screen and (max-width: $width-large) { @content; }
+    }
+    @else if $width == medium-screens {
+        @media only screen and (max-width: $width-medium) { @content; }
+    }
+    @else if $width == small-screens {
+        @media only screen and (max-width: $width-small) { @content; }
+    }
+}

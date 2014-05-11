@@ -1,7 +1,22 @@
-/*
-justfielding.com style sheet
-*/
+// justfielding.com stylesheet
 
+// Mixins
+@import "normalize.scss";
+@import "mixins.scss";
+
+// Colors
+$color-white: #fff;
+$color-offwhite: #F8F7F5;
+$color-purple: #9477C9;
+$color-darkgray: #2F3437;
+
+// Fonts
+$font-sans: 'Open Sans', sans-serif;
+
+// Media Query Breakpoints (max widths)
+$width-small: 40em;     // 640px
+$width-medium: 64em;    // 1024px
+$width-large: 90em;     // 1440px
 
 /* ---------------------
 Element Selectors (ordered as they appear on the page)
@@ -10,7 +25,7 @@ Element Selectors (ordered as they appear on the page)
 html {
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-sans;
 }
 
 a {
@@ -18,11 +33,23 @@ a {
 }
 
 header[role="banner"] {
-    background-color: #2F3437;
+    background-color: $color-darkgray;
     height: 30em;
-    border-bottom: 3px solid #1D2223;
+    border-bottom: .188em solid darken($color-darkgray, 7%);
     position: relative;
     text-align: center;
+    
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+        height: 25em;
+    }
+    
+    @include responsive(small-screens) {
+        height: 15em;
+    }
+    
 }
 
 header[role="banner"]:after, header[role="banner"]:before {
@@ -38,13 +65,13 @@ header[role="banner"]:after, header[role="banner"]:before {
 
 header[role="banner"]:after {
 	border-color: rgba(47, 52, 55, 0);
-	border-top-color: #2F3437;
+	border-top-color: $color-darkgray;
 	border-width: 30px;
 	margin-left: -30px;
 }
 header[role="banner"]:before {
 	border-color: rgba(29, 34, 35, 0);
-	border-top-color: #1D2223;
+	border-top-color: darken($color-darkgray, 7%);
 	border-width: 34px;
 	margin-left: -34px;
 }
@@ -55,7 +82,18 @@ header[role="banner"]:before {
     margin: auto;
     height: 60%;
     width: 60%;
-    padding-top: 5%;
+    padding-top: 4em;
+    
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+        padding-top: 2em;
+    }
+    
+    @include responsive(small-screens) {
+        padding-top: 1em;
+    }
 }
 
 #github, #twitter, #mail {
@@ -66,7 +104,7 @@ header[role="banner"]:before {
 }
 
 #about {
-    background-color: #FFF;
+    background-color: $color-white;
     height: 20em;
     text-align: center;
 }
@@ -81,20 +119,33 @@ header[role="banner"]:before {
     font-size: 20pt;
     vertical-align: middle;
     display: table-cell;
+    
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+        font-size: 16pt
+    }
+    
+    @include responsive(small-screens) {
+        font-size: 12pt;
+    }
 }
 
 #whatido {
-    background-color: #9477C9;
+    background-color: $color-purple;
     height: 30em;
 }
 
 #pastwork {
-    background-color: #FFF;
+    background-color: $color-white;
     height: 20em;
 }
 
 #letsworktogether {
-    background-color: #F8F7F5;
+    background-color: $color-offwhite;
+    border-top: .188em solid darken($color-offwhite, 7%);
+    border-collapse: collapse;
     height: 8em;
     display: table;
     width: 100%;
@@ -109,26 +160,25 @@ header[role="banner"]:before {
 #letsworktogether h3 {
     width: 66%;
     display: inline-block;
-    color: #2F3437;
+    color: $color-darkgray;
 }
 
 #letsworktogether button {
-    background-color: #9477C9;
-    border-radius: .188em;
+    background-color: $color-purple;
     border: none;
-    color: #fff;
-    text-shadow: -.063em -.063em 0 rgba( 0, 0, 0, .5);
+    color: $color-white;
+    text-shadow: -.063em -.063em 0 darken($color-purple, 50%);
     font-weight: 600;
     letter-spacing: .063em;
     padding: 1em;
+    @include rounded(.188em);
     
 }
 
 footer[role="contentinfo"] {
-    background-color: #2F3437;
+    background-color: $color-darkgray;
     height: 15em;
-    border-top-color: #1D2223;
-    border-top-style: solid;
+    border-top: .188em solid darken($color-darkgray, 7%);
 }
 
 /*----------------------
@@ -136,7 +186,7 @@ SVG adjustments (still unclear of where I want to put these)
 -----------------------*/
 
 .text-just {
-    fill: #FFFFFF;
+    fill: $color-white;
 }
 
 
@@ -177,62 +227,6 @@ Media Queries
 
 // XLarge screens
 @media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
-
-
-
-
-/*  OLD MEDIA QUERIES
-
-@media screen and (min-width: 28.75em){
-
-    header[role="banner"] {
-        height: 20em;
-    }
-
-    #about {
-        height: 20em;
-    }
-
-    #whatido {
-        height: 20em;
-    }
-
-    #pastwork {
-        height: 20em;
-    }
-
-    footer[role="contentinfo"] {
-        height: 20em;
-    }
-
-
-}
-
-@media screen and (min-width: 48.0em) {
-
-    header[role="banner"]{
-        height: 30em;
-    }
-
-    #about {
-        height: 30em;
-    }
-
-    #whatido {
-        height: 30em;
-    }
-
-    #pastwork {
-        height: 30em;
-    }
-
-    footer[role="contentinfo"] {
-        height: 30em;
-    }
-}
-
-
-*/
 
 
 
