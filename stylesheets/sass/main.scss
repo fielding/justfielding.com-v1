@@ -25,6 +25,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
     font-family: $font-sans;
+    color: $color-darkgray;
 }
 
 header[role="banner"] {
@@ -122,7 +123,7 @@ header[role="banner"]:before {
 #about {
     background-color: $color-white;
     height: 20em;
-    text-align: center;
+    margin: 2%;
     
     @include responsive(wide-screens) {
     }
@@ -136,32 +137,41 @@ header[role="banner"]:before {
     }
 }
 
-#about div {
-    height: 100%;
-    width: 100%;
-    display: table;
+#def-name {
+    display: inline;
+    margin: 0;
+    color: $color-purple;
 }
 
-#about p {
-    font-size: 20pt;
-    vertical-align: middle;
-    display: table-cell;
-    
-    @include responsive(wide-screens) {
-    }
-    
-    @include responsive(medium-screens) {
-        font-size: 16pt;
-    }
-    
-    @include responsive(small-screens) {
-        font-size: 10pt;
-    }
+#def-phonetic {
+    margin: 0;
+    display: inline;
+}
+
+#def-pospeech {
+    margin: 0;
+    font-style: italic;
+}
+
+#def-body {
+    margin: .5em 0;
+}
+
+#def-synonym-tag {
+    margin: 0;
+    font-style: italic;
+}
+
+#def-synonyms {
+    margin: 0;
 }
 
 #whatido {
     background-color: $color-purple;
     height: 30em;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
     
     @include responsive(wide-screens) {
     }
@@ -174,6 +184,30 @@ header[role="banner"]:before {
         height: 15em;
     }
 }
+
+#whatido > div {
+    flex: 1 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    visibility: hidden;
+}
+
+#whatido > div:nth-child(2){
+        margin: 0 2em;
+}
+
+#whatido h2 {
+    color: $color-white;
+    font-size: 1em; // fallback
+    font-size: 2vmin;
+    letter-spacing: .063em;
+}
+
+.wid-glyph {
+    max-height: 66%;
+}
+
 
 #pastwork {
     background-color: $color-white;
@@ -237,7 +271,7 @@ header[role="banner"]:before {
     background-color: $color-purple;
     border: none;
     color: $color-white;
-    text-shadow: -.063em -.063em 0 darken($color-purple, 50%);
+    // text-shadow: -.063em -.063em 0 darken($color-purple, 50%);
     font-weight: 600;
     letter-spacing: .063em;
     padding: 1em;
@@ -257,26 +291,84 @@ header[role="banner"]:before {
 
 footer[role="contentinfo"] {
     background-color: $color-darkgray;
-    height: 15em;
+    height: 5em;
     border-top: .188em solid darken($color-darkgray, 7%);
+    display: table;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    
     @include responsive(wide-screens) {
     }
     
     @include responsive(medium-screens) {
-        height: 12.5em;
+        height: 4.15em;
     }
     
     @include responsive(small-screens) {
-        height: 7.5em;
+        height: 2.5em;
     }
 }
 
+/*
+#footer-social-icons {
+    width: 80%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+*/
+
+.socialicons-dark {
+    height: 8%;
+    display: inline-block;
+    width: auto;
+}
+
+
+#github-footer, #twitter-footer, #mail-footer {
+    height: 100%;
+    width: auto;
+    margin: auto;
+    pointer-events: none;
+}
+
+#footer-copyright {
+    width: 33%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.copyright {
+    color: darken($color-darkgray, 7%);
+    font-weight: 700;
+    vertical-align: middle;
+    display: inline-block;
+    
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+    }
+    
+    @include responsive(small-screens) {
+        font-size: 10px;
+    }
+}
+
+.copyright b {
+    @extend .copyright;
+    letter-spacing: .063em;
+    color: $color-purple;
+
+}
 
 // SVG adjustments (still unclear of where I want to put these)
 
 .text-just {
     fill: $color-white;
 }
+
 
 
 

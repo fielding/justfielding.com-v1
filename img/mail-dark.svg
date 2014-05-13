@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="60px"
+	 viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+<title>Mail</title>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="Mail" sketch:type="MSArtboardGroup">
+		<g sketch:type="MSLayerGroup">
+			<path sketch:type="MSShapeGroup" display="none" fill="#3F0A0A" d="M0.225,30c0-16.568,13.23-30,29.551-30
+				s29.551,13.432,29.551,30s-13.23,30-29.551,30S0.225,46.568,0.225,30z"/>
+			<path id="Shape" sketch:type="MSShapeGroup" fill="#1F2224" d="M35.039,31.639l12.174,8.938V20L35.039,31.639z M13.771,20v20.576
+				l12.174-8.939L13.771,20z M30.492,35.984l-2.907-2.777L13.771,42h33.442l-13.814-8.793L30.492,35.984z M46.21,20H14.774
+				l15.718,12.455L46.21,20z"/>
+			<path id="reflec" sketch:type="MSShapeGroup" display="none" fill-opacity="0.08" d="M59.326,30c0,16.568-13.23,30-29.551,30
+				c-6.053,0-11.681-1.848-16.366-5.018L47.27,5.819C54.582,11.281,59.326,20.078,59.326,30z"/>
+		</g>
+	</g>
+</g>
+</svg>
