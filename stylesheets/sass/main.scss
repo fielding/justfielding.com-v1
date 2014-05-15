@@ -9,9 +9,11 @@ $color-white: #fff;
 $color-offwhite: #F8F7F5;
 $color-purple: #9477C9;
 $color-darkgray: #2F3437;
+$color-lightgray: #ebe7e7;
 
 // Fonts
 $font-sans: 'Open Sans', sans-serif;
+$font-lobster: 'Lobster', cursive;
 
 // Media Query Breakpoints (max widths)
 $width-small: 40em;     // 640px
@@ -212,6 +214,9 @@ header[role="banner"]:before {
 #pastwork {
     background-color: $color-white;
     height: 20em;
+    text-align: center;
+    display: flex;
+    align-items: center;
     
     @include responsive(wide-screens) {
     }
@@ -223,6 +228,12 @@ header[role="banner"]:before {
     @include responsive(small-screens) {
         height: 10em;
     }
+}
+
+.coming-soon {
+    flex-grow: 1;
+    font-family: $font-lobster;
+    color: $color-lightgray;
 }
 
 #letsworktogether {
@@ -270,12 +281,13 @@ header[role="banner"]:before {
 #letsworktogether button {
     background-color: $color-purple;
     border: none;
+    border-bottom: .188em solid darken($color-purple, 15%);
     color: $color-white;
     // text-shadow: -.063em -.063em 0 darken($color-purple, 50%);
     font-weight: 600;
     letter-spacing: .063em;
     padding: 1em;
-    @include rounded(.188em);
+    @include rounded(.313em);
     
     @include responsive(wide-screens) {
     }
@@ -317,15 +329,14 @@ footer[role="contentinfo"] {
 
 #footer-copyright {
     flex-grow: 1;
-    display: fex;
+    display: flex;
     justify-content: center;
 }
 
 .copyright {
     color: darken($color-darkgray, 7%);
     font-weight: 700;
-    vertical-align: middle;
-    display: inline-block;
+    text-align: center;
     
     @include responsive(wide-screens) {
     }
