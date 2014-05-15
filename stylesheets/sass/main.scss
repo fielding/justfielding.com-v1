@@ -227,7 +227,7 @@ header[role="banner"]:before {
 
 #letsworktogether {
     background-color: $color-offwhite;
-    border-top: .188em solid darken($color-offwhite, 7%);
+    border-bottom: .188em solid darken($color-offwhite, 7%);
     border-collapse: collapse;
     height: 8em;
     display: table;
@@ -291,12 +291,11 @@ header[role="banner"]:before {
 
 footer[role="contentinfo"] {
     background-color: $color-darkgray;
-    height: 5em;
     border-top: .188em solid darken($color-darkgray, 7%);
-    display: table;
+    height: 5em;
     width: 100%;
-    position: relative;
-    text-align: center;
+    display: flex;
+    align-items: center; 
     
     @include responsive(wide-screens) {
     }
@@ -310,33 +309,16 @@ footer[role="contentinfo"] {
     }
 }
 
-/*
-#footer-social-icons {
-    width: 80%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-*/
-
-.socialicons-dark {
-    height: 8%;
-    display: inline-block;
-    width: auto;
-}
-
-
-#github-footer, #twitter-footer, #mail-footer {
-    height: 100%;
-    width: auto;
-    margin: auto;
-    pointer-events: none;
+#footer-socialicons {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
 }
 
 #footer-copyright {
-    width: 33%;
-    display: table-cell;
-    vertical-align: middle;
+    flex-grow: 1;
+    display: fex;
+    justify-content: center;
 }
 
 .copyright {
