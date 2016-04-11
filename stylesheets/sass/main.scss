@@ -20,6 +20,11 @@ $width-small: 40em;     // 640px
 $width-medium: 64em;    // 1024px
 $width-large: 90em;     // 1440px
 
+// Section heights used for different breakpoints
+$section-small: 15em;
+$section-medium: 25em;
+$section-large: 50em;
+
 // Element Selectors (ordered as they appear on the page)
 
 
@@ -32,7 +37,7 @@ html {
 
 header[role="banner"] {
     background-color: $color-darkgray;
-    height: 30em;
+    height: $section-large;
     border-bottom: .188em solid darken($color-darkgray, 7%);
     position: relative;
     text-align: center;
@@ -78,8 +83,8 @@ header[role="banner"]:before {
 #jflogo {
     display: block;
     margin: auto;
-    height: 60%;
     width: 60%;
+    height: 60%;
     padding-top: 4em;
     
     @include responsive(wide-screens) {
@@ -107,7 +112,7 @@ header[role="banner"]:before {
 
 .socialicons {
     display: inline-block;
-    height: 12.5%;
+    max-height: 3.75em;
     width: auto;
     
     @include responsive(wide-screens) {
@@ -125,7 +130,7 @@ header[role="banner"]:before {
 #about {
     background-color: $color-white;
     height: 20em;
-    margin: 2%;
+    margin: 5% 2%;
     
     @include responsive(wide-screens) {
     }
@@ -137,6 +142,17 @@ header[role="banner"]:before {
     @include responsive(small-screens) {
         height: 10em;
     }
+}
+
+#fielding-avatar {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+}
+
+#fielding-definition {
+    width: 73%;
+    display: inline-block;
 }
 
 #def-name {
@@ -168,9 +184,47 @@ header[role="banner"]:before {
     margin: 0;
 }
 
-#whatido {
+#design-quote {
     background-color: $color-purple;
-    height: 30em;
+    height: 8em;
+    text-align: center;
+    border-top: .188em solid darken($color-purple, 7%);
+    border-bottom: .188em solid darken($color-purple, 7%);
+
+    @include responsive(wide-screens) {
+    }
+    
+    @include responsive(medium-screens) {
+        height: 6.6em;
+    }
+    
+    @include responsive(small-screens) {
+        height: 4em;
+    }
+
+}
+
+.quotationmark {
+    font-size: 4em;
+    color: $color-white;
+    padding-bottom: -5%;
+}
+
+.quote {
+    font-size: 2em;
+    font-style: italic;
+    color: $color-white;
+}
+
+.quote-author {
+    color: $color-white;
+    display: block;
+
+}
+
+#whatido {
+    background-color: $color-white;
+    height: 21em;
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -187,33 +241,46 @@ header[role="banner"]:before {
     }
 }
 
+
 #whatido > div {
     flex: 1 1;
     display: flex;
     flex-flow: column;
     align-items: center;
-    visibility: hidden;
+    // visibility: hidden;
 }
 
 #whatido > div:nth-child(2){
-        margin: 0 2em;
 }
 
-#whatido h2 {
-    color: $color-white;
+.services {
+    color: $color-darkgray;
     font-size: 1em; // fallback
     font-size: 2vmin;
-    letter-spacing: .063em;
+    //letter-spacing: .063em;
+    font-weight: 400;
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+
+.glyph-container {
+    background-image: url(http://justfielding.com/img/circle-bg.svg);
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    height: 128px;
+    width: 128px;
 }
 
 .wid-glyph {
-    max-height: 66%;
+    height: 90%;
+    width: 90%;
+    margin: auto;
 }
 
 
 #pastwork {
     background-color: $color-white;
-    height: 20em;
+    height: $section-large;
     text-align: center;
     display: flex;
     align-items: center;
@@ -238,6 +305,7 @@ header[role="banner"]:before {
 
 #letsworktogether {
     background-color: $color-offwhite;
+    border-top: .188em solid darken($color-offwhite, 7%);
     border-bottom: .188em solid darken($color-offwhite, 7%);
     border-collapse: collapse;
     height: 8em;
