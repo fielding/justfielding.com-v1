@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/fielding
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://justfielding.com
+  * I am fielding (https://keybase.io/fielding) on keybase.
+  * I have a public key ASAvhP2HvOy0WA1vv5vxQdE4NJ0DdbsSXcP0-NEMDPby3wo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01200246023642617beeab38106561745335f35a3610ea81a57ae21e0d8f45897d7d0a",
+            "host": "keybase.io",
+            "kid": "01202f84fd87bcecb4580d6fbf9bf141d138349d0375bb125dc3f4f8d10c0cf6f2df0a",
+            "uid": "e2de76c4ae5bc073516e637c82e6cf19",
+            "username": "fielding"
+        },
+        "service": {
+            "hostname": "justfielding.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.14"
+    },
+    "ctime": 1460410725,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1460410685,
+        "hash": "8fdc8b98a948c9f373a79d933d4b438fbb9ff12ce6e37559a7dd0f0395a5358e22c9a7f95074e2246c7ffffba9cfaf231e1a184164ba352d74af0ec6b350b0ad",
+        "seqno": 439052
+    },
+    "prev": "114e49170ee10c3009d503ab1a7b1684253cac9a6c676a8bc65f8480dff403cb",
+    "seqno": 20,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgL4T9h7zstFgNb7+b8UHRODSdA3W7El3D9PjRDAz28t8Kp3BheWxvYWTFAvh7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMDI0NjAyMzY0MjYxN2JlZWFiMzgxMDY1NjE3NDUzMzVmMzVhMzYxMGVhODFhNTdhZTIxZTBkOGY0NTg5N2Q3ZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMmY4NGZkODdiY2VjYjQ1ODBkNmZiZjliZjE0MWQxMzgzNDlkMDM3NWJiMTI1ZGMzZjRmOGQxMGMwY2Y2ZjJkZjBhIiwidWlkIjoiZTJkZTc2YzRhZTViYzA3MzUxNmU2MzdjODJlNmNmMTkiLCJ1c2VybmFtZSI6ImZpZWxkaW5nIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJqdXN0ZmllbGRpbmcuY29tIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xNCJ9LCJjdGltZSI6MTQ2MDQxMDcyNSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDYwNDEwNjg1LCJoYXNoIjoiOGZkYzhiOThhOTQ4YzlmMzczYTc5ZDkzM2Q0YjQzOGZiYjlmZjEyY2U2ZTM3NTU5YTdkZDBmMDM5NWE1MzU4ZTIyYzlhN2Y5NTA3NGUyMjQ2YzdmZmZmYmE5Y2ZhZjIzMWUxYTE4NDE2NGJhMzUyZDc0YWYwZWM2YjM1MGIwYWQiLCJzZXFubyI6NDM5MDUyfSwicHJldiI6IjExNGU0OTE3MGVlMTBjMzAwOWQ1MDNhYjFhN2IxNjg0MjUzY2FjOWE2YzY3NmE4YmM2NWY4NDgwZGZmNDAzY2IiLCJzZXFubyI6MjAsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA3c1c1sj+QOKxbpoUeWslXYX8xLCayVBJn+KI0ykX1gz+mOLIVydgHgZE98hBn439U/GD9EyNWm3LVksnLp0WB6hzaWdfdHlwZSCjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/fielding
+
+==================================================================
