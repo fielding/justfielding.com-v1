@@ -1,1 +1,1 @@
-weblua/build/weblua.js
+./ld26/js/weblua/build/weblua.js
